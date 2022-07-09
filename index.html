@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/pokeStyles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1><span>Poke</span>dex</h1>
+    
+    <form name="form1">
+        <input type="text" name="name" placeholder="Pokemon name or Id" autofocus>
+        <button type="submit" value="Search"><img id="imgBtn" src="https://cdn-icons-png.flaticon.com/512/287/287221.png"></button>
+    </form>
+
+    <div class="card">
+        <div class="div-img">
+            <div class="blur"></div>
+            <img id="pokemon" src="https://svgsilh.com/svg/1574006.svg" alt="Pokemon image">
+        </div>
+        <div class="id-name">
+            <p id="id">#0</p>
+            <p id="name">Pokemon not found</p>
+        </div>
+        <div class="abilities" id="abilities"></div>
+    </div>
+
+    <script src="js/pokeapi.js"></script>
+</body>
+</html>

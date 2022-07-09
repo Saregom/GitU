@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+body{
+    text-align: center;
+}
+h1{
+    font-size: 3em;
+}
+h1 span{
+    color: rgb(230, 90, 90)
+}
+form{
+    display: flex;
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+}
+input{
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    border-top: lightcoral solid 2px;
+    border-bottom: solid 2px #000000;
+}
+input:focus{
+    box-shadow: 0 0 5px #b8b8b8;
+    outline: none;
+}
+button{
+    margin-left: 10px;
+    min-width: 45px;
+    min-height: 45px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+}
+button:hover{
+    box-shadow: 0 0 5px #b8b8b8;
+}
+button img{
+    width: 45px;
+    height: 45px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 0 30px;
+    background: linear-gradient(45deg, rgb(186, 223, 248) 0%, rgb(124, 137, 250) 50%, rgb(201, 122, 247) 100%);
+    box-shadow: 5px 5px 10px #83838380;
+    border: ridge 6px #b494ff;
+}
+.div-img{
+    background-image: url("https://pokecompany.com/wp-content/uploads/2021/08/Hisui_LeyendasPokemonArceus_Pradera.jpg");
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    border-radius: 0 20px;
+    position: relative;
+    border: ridge 6px #b494ff;
+}
+.blur{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backdrop-filter: blur(2px);
+    border-radius: 0 20px; 
+}
+.div-img img{
+    position: relative;
+    width: 200px;
+    padding: 20px;
+}
+.id-name{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto ;
+    grid-gap: 10px;
+}
+.id-name p{
+    border-radius: 0 10px;
+    margin: 0;
+    margin-top: 10px; 
+    padding: 10px;
+    height: 40px;
+    background: linear-gradient(45deg, rgb(252, 241, 145), rgb(255, 132, 132) 100%);
+    border: solid 2px rgb(212, 86, 86);
+}
+.abilities .ability{
+    border-radius: 0 10px;
+    padding-top: 10px;
+    height: 40px;
+    margin: 0;
+    margin-top: 10px;
+    background: linear-gradient(90deg, rgba(218, 255, 158, 0.705), rgba(76, 247, 167, 0.705) 100%);
+    border: solid 2px #2b924a;
+}
