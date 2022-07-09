@@ -13,8 +13,8 @@ document.form1.onsubmit = (e) => {
         query("#name").innerHTML = data.name
         query("#id").innerHTML = `#${data.id}`
         
-        if(data.sprites.front_default === null){
-            query("#pokemon").src = "https://arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/LUOOHUM2OVEEXG7ZTRSNI6XWLY.png"
+        if(data.sprites.front_default == null){
+            query("#pokemon").src ="https://arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/LUOOHUM2OVEEXG7ZTRSNI6XWLY.png"
             query("#pokemon").style.padding = "20px"
         }else{
             query("#pokemon").src = data.sprites.front_default
